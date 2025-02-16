@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Colour ChanGer...</h1>
+    <h2 class="h2">Enter the following details!</h2>
+    <div class="color-palette">
+        <div class="color-box" style="background-color: white;" onclick="changeColor('white')"></div>
+        <div class="color-box" style="background-color: red;" onclick="changeColor('red')"></div>
+        <div class="color-box" style="background-color: blue;" onclick="changeColor('blue')"></div>
+        <div class="color-box" style="background-color: green;" onclick="changeColor('green')"></div>
+        <div class="color-box" style="background-color: yellow;" onclick="changeColor('yellow')"></div>
+        <div class="color-box" style="background-color: purple;" onclick="changeColor('purple')"></div>
+        <div class="color-box" style="background-color: skyblue;" onclick="changeColor('skyblue')"></div>
+        <div class="color-box" style="background-color: greenyellow;" onclick="changeColor('greenyellow')"></div>
+        <div class="color-box" style="background-color: darkred;" onclick="changeColor('darkred')"></div>
+        <div class="color-box" style="background-color: darkorange;" onclick="changeColor('orange')"></div>
+        <div class="color-box" style="background-color: darkblue;" onclick="changeColor('darkblue')"></div>
+    </div>
+    <div class="input-container">
+        <input type="text" id="usernameInput" placeholder="Enter your Name" />
+    </div>
+    <div class="input-container">
+        <input type="text" id="colorInput" placeholder="Enter your favorite color" /><br><br>
+            <button onclick="applyColor() ">Apply Color</button>
+    </div>
+    <div class="saved-container">
+        <h3>Saved Information:</h3>
+        <ul id="savedInfoList"></ul> 
+    </div>
+    <div class="delete">
+        <button onclick="deleteLastEntry()">Delete Last Entry</button><br><br>
+        <button onclick="deleteAllEntries()">Delete All Entries</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
